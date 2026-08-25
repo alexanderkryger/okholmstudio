@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ansøgning · E-commerce Manager · Okholm Studio</title>
+<meta name="description" content="Ansøgning til stillingen som E-commerce Manager hos Okholm Studio. Alexander Krüger.">
+<meta name="theme-color" content="#c8c6c0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3F1ED;
+    --paper-2:#E9E6E0;
+    --greige:#C8C6C0;
+    --ink:#1C1B19;
+    --stone:#7D7A73;
+    --sage:#59634C;
+    --line:rgba(28,27,25,.14);
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:'Jost',system-ui,sans-serif;font-weight:300;
+    font-size:17px;line-height:1.75;letter-spacing:.005em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  @media(max-width:640px){.wrap{padding:0 22px}}
+
+  .display{font-family:'Instrument Serif',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--stone)}
+  p+p{margin-top:1.05em}
+  a{color:inherit}
+  strong{font-weight:500}
+  .fill{color:var(--sage);border-bottom:1px dashed var(--sage);font-size:.86em;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:12px;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;
+    padding:15px 26px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+    transition:background .3s,color .3s,border-color .3s;
+  }
+  .btn:hover{background:var(--sage);border-color:var(--sage)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper)}
+  .btn .arw{font-family:'Instrument Serif',Georgia,serif;font-size:15px;letter-spacing:0}
+  .btnrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+
+  /* topbar */
+  .topbar{border-bottom:1px solid var(--line);background:rgba(243,241,237,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+  .topbar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:64px;gap:20px}
+  .topbar nav{display:flex;gap:26px}
+  .topbar nav a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--ink);position:relative;padding:4px 0;transition:color .3s}
+  .topbar nav a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--sage);transition:right .35s ease}
+  .topbar nav a:hover{color:var(--sage)}
+  .topbar nav a:hover:after{right:0}
+  .wordmark{font-size:14px;letter-spacing:.3em;text-transform:uppercase;font-weight:300;white-space:nowrap;text-align:center}
+  .topbar .util{justify-self:end;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);white-space:nowrap}
+  @media(max-width:760px){
+    .topbar .wrap{grid-template-columns:1fr;height:auto;padding-top:14px;padding-bottom:12px;gap:11px;justify-items:center}
+    .topbar .util{display:none}
+    .topbar nav{gap:22px;order:2}
+    .wordmark{order:1;font-size:12.5px;letter-spacing:.28em}
+  }
+
+  /* hero */
+  .hero{padding:78px 0 84px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}
+  .hero h1{font-size:clamp(38px,5.2vw,64px);margin:22px 0 0}
+  .hero .name{font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:var(--sage);margin-top:20px}
+  .portrait figure{margin:0;position:relative}
+  .portrait img{
+    width:100%;height:auto;display:block;background:transparent;
+    -webkit-clip-path:url(#pebble);clip-path:url(#pebble);
+  }
+  .shapedefs{position:absolute;width:0;height:0;overflow:hidden}
+  .portrait figcaption{margin-top:18px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone)}
+  .portrait figcaption b{font-weight:400;color:var(--ink)}
+  @media(max-width:900px){
+    .hero{padding:52px 0 58px}
+    .hero-grid{grid-template-columns:1fr;gap:44px}
+    .portrait{order:-1}
+  }
+
+  section.band{padding:86px 0;border-bottom:1px solid var(--line)}
+  @media(max-width:640px){section.band{padding:56px 0}}
+  .band h2{font-size:clamp(28px,3.6vw,44px);margin:18px 0 0;max-width:24ch}
+
+  /* letter */
+  .letter{max-width:62ch}
+  .letter p{font-size:18.5px;line-height:1.78}
+  .to{font-family:'Instrument Serif',Georgia,serif;font-size:28px;margin-bottom:22px}
+  .signoff{margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
+  .signoff .nm{font-family:'Instrument Serif',Georgia,serif;font-size:24px}
+
+  /* three things */
+  .thing{
+    display:grid;grid-template-columns:.6fr 1.4fr;gap:48px;
+    padding:36px 0;border-bottom:1px solid var(--line);
+  }
+  .thing:first-of-type{border-top:1px solid var(--ink);margin-top:42px}
+  .thing .col .no{font-family:'Instrument Serif',Georgia,serif;font-size:15px;color:var(--sage)}
+  .thing .col h3{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:29px;line-height:1.15;margin:8px 0 10px}
+  .thing .col .per{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone)}
+  .thing .body p{font-size:17px;line-height:1.72;color:#2E2C29}
+  .thing .body .pt{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:15.5px;color:var(--sage)}
+  @media(max-width:820px){
+    .thing{grid-template-columns:1fr;gap:18px;padding:28px 0}
+    .thing .col h3{font-size:25px}
+  }
+
+  /* cv band */
+  .cvband{background:var(--ink);color:var(--paper);padding:82px 0}
+  .cvband .eyebrow{color:rgba(243,241,237,.55)}
+  .cvband h2{font-size:clamp(28px,4vw,46px);margin:18px 0 0;max-width:20ch}
+  .cvband p{color:rgba(243,241,237,.72);max-width:52ch;margin-top:20px}
+  .cvband .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  .cvband .btn:hover{background:var(--sage);border-color:var(--sage);color:var(--paper)}
+  .cvband .btn.ghost{background:transparent;color:var(--paper);border-color:rgba(243,241,237,.4)}
+  .cvband .btn.ghost:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+  @media(max-width:640px){.cvband{padding:58px 0}}
+
+  /* contact */
+  .contact{padding:84px 0 76px;text-align:center}
+  .contact h2{font-size:clamp(26px,3.4vw,40px);max-width:24ch;margin:20px auto 0}
+  .lines{margin-top:34px;display:flex;justify-content:center;gap:38px;flex-wrap:wrap}
+  .lines a{font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px;transition:color .3s,border-color .3s}
+  .lines a:hover{color:var(--sage);border-color:var(--sage)}
+  footer{border-top:1px solid var(--line);padding:26px 0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  /* login gate */
+  body.locked{overflow:hidden}
+  #gate{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;justify-content:space-between;background:var(--ink);overflow:hidden;transition:opacity .8s ease,transform .8s ease}
+  #gate video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  #gate .scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,19,17,.42) 0%,rgba(20,19,17,.30) 38%,rgba(20,19,17,.62) 100%)}
+  .g-top,.g-bottom{position:relative;z-index:2;padding:26px 32px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .g-top span,.g-bottom span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(243,241,237,.75)}
+  .g-mid{position:relative;z-index:2;padding:20px 32px;display:flex;justify-content:center;align-items:center;flex:1}
+  .card{width:100%;max-width:400px;background:rgba(243,241,237,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:44px 38px 42px}
+  .card .eyebrow{color:var(--sage)}
+  .card h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:32px;line-height:1.14;margin:12px 0 6px}
+  .card .sub{font-size:15px;line-height:1.6;color:var(--stone)}
+  .field{margin-top:24px}
+  .field label{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone);margin-bottom:7px}
+  .field input{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);padding:9px 0;font-family:'Jost',sans-serif;font-size:16px;font-weight:300;color:var(--ink);letter-spacing:.03em;border-radius:0}
+  .field input:focus{outline:0;border-bottom-color:var(--sage)}
+  .card button{width:100%;margin-top:32px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:16px 20px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);transition:background .3s,border-color .3s}
+  .card button:hover{background:var(--sage);border-color:var(--sage)}
+  #gate.out{opacity:0;transform:translateY(-3%);pointer-events:none}
+  @media(max-width:640px){
+    .g-top,.g-bottom{padding:20px 22px}
+    .g-mid{padding:16px 22px}
+    .card{padding:34px 26px 34px}
+    .card h2{font-size:27px}
+    .g-bottom span:last-child{display:none}
+  }
+
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+
+  .rise{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+  .rise.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .rise{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    #gate{transition:none}
+  }
+</style>
+</head>
+<body class="locked">
+
+<div id="gate">
+  <video autoplay muted loop playsinline preload="auto" poster="hero-poster.jpg" aria-hidden="true">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="scrim"></div>
+
+  <div class="g-top">
+    <span>Okholm Studio</span>
+    <span>Hasselager · Aarhus</span>
+  </div>
+
+  <div class="g-mid">
+    <div class="card">
+      <div class="eyebrow">Fortrolig</div>
+      <h2>Ansøgning til E-commerce Manager</h2>
+      <p class="sub">Log ind for at se ansøgningen.</p>
+      <form id="loginform" novalidate>
+        <div class="field">
+          <label for="user">Brugernavn</label>
+          <input id="user" name="user" type="text" value="Okholm Studio" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="field">
+          <label for="pass">Adgangskode</label>
+          <input id="pass" name="pass" type="text" value="8361" autocomplete="off" spellcheck="false">
+        </div>
+        <button type="submit">Log ind</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="g-bottom">
+    <span>Alexander Krüger</span>
+    <span>2026</span>
+  </div>
+</div>
+
+<svg class="shapedefs" aria-hidden="true" focusable="false"><defs>
+  <clipPath id="pebble" clipPathUnits="objectBoundingBox">
+    <path d="M0.46,0.008 C0.72,-0.002 0.948,0.100 0.986,0.300 C1.008,0.468 0.958,0.578 0.968,0.702 C0.980,0.862 0.792,0.996 0.558,0.989 C0.352,0.982 0.112,0.950 0.056,0.772 C0.008,0.606 0.146,0.500 0.112,0.358 C0.082,0.196 0.240,0.026 0.46,0.008 Z"/>
+  </clipPath>
+</defs></svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav>
+      <a href="#" id="navhome">Forside</a>
+      <a href="#ansoegning">Ansøgning</a>
+      <a href="#cv">CV</a>
+    </nav>
+    <div class="wordmark">Okholm Studio</div>
+    <div class="util">E-commerce Manager</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="rise">
+      <div class="eyebrow">Ansøgning · Okholm Studio</div>
+      <h1 class="display">E-commerce Manager</h1>
+      <div class="name">Alexander Krüger</div>
+      <div class="btnrow">
+        <a class="btn" href="#cv">Se mit CV <span class="arw">&rarr;</span></a>
+        <a class="btn ghost" href="#ansoegning">Læs ansøgningen</a>
+      </div>
+    </div>
+    <div class="portrait rise">
+      <figure>
+        <img src="portrait.jpg" alt="Alexander Krüger med en buket kunstige blomster" width="1400" height="1738">
+        <figcaption><b>Alexander Krüger</b><span>E-commerce &amp; vækst</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<section class="band" id="ansoegning">
+  <div class="wrap">
+    <div class="letter rise">
+      <div class="to">Til Okholm Studio</div>
+      <p>Jeg har svært ved at holde fingrene fra en webshop. Derfor har jeg tre. Jeg har ansvaret for e-commerce og performance hos Bedre Nætter og Sengefabrikken, jeg driver Højholt Hudpleje sammen med min kæreste, og jeg har mit eget konsulentselskab ved siden af. Over ti år, hvor jeg ikke har lavet andet end at bygge, skalere og optimere webshops.</p>
+      <p>Derfor er rollen hos jer interessant. I har fat i det danske marked og skal ud i Europa, og det er præcis det spring jeg har taget før. Bedre Nætter er gået fra rent dansk salg til hele Europa, og gennem Brandvaerk åbner jeg nye markeder med Shopify Markets, hvor domæner, valuta, priser, betalingsmetoder og fragt skal sidde rigtigt, før der bliver skruet op for annoncebudgettet.</p>
+      <p>Jeg har blandt andet udviklet Floreniget.com på Shopify, som sælger kunstige blomster til både D2C og B2B. Så jeg kender ikke bare platformen, jeg kender jeres kategori: at produktfoto bærer konverteringen, at efterspørgslen er sæsonstyret, og at AOV og genkøbsmønstre ser helt forskellige ud på de to salgskanaler. Til daglig styrer jeg efter ROAS, CAC, konverteringsrate og dækningsbidrag, og træffer beslutninger på tallene frem for på fornemmelser.</p>
+      <p>Her er de tre ting lidt nærmere. Resten tager vi til en samtale.</p>
+      <div class="signoff">
+        <div class="nm">Alexander Krüger</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="rise">
+      <div class="eyebrow">Erfaring</div>
+      <h2 class="display">Tre steder jeg driver e-commerce</h2>
+    </div>
+
+    <div class="rise">
+      <article class="thing">
+        <div class="col">
+          <div class="no">01</div>
+          <h3>Bedre Nætter / Sengefabrikken</h3>
+          <div class="per">E-commerce &amp; performance · 2017 til nu</div>
+        </div>
+        <div class="body">
+          <p>Jeg har ansvaret for e-commerce og vækst på tværs af de to brands. Da jeg startede, var det en ren dansk webshop. I dag sælger vi i hele Europa, og jeg har haft hånden på hele vejen derhen: hvilke markeder vi åbnede og i hvilken rækkefølge, lokalisering af sprog, priser og fragt, og opbygningen af den performance- og datamotor, der skulle bære salget uden for Danmark.</p>
+          <p>På Bedre Nætter ligger hovedvægten på CRO og kvalitetssikring. Shoppen kører på syv storeviews, og det er en helt anden disciplin end at optimere én butik. Hver test skal valideres på tværs af sprog, valuta, priser og fragtregler, og en ændring der løfter konverteringen i Danmark kan sagtens falde igennem i Tyskland. Jeg arbejder struktureret med produktside og checkout, holder øje med at intet knækker i de andre visninger, og styrer på konverteringsrate og omsætning pr. besøgende frem for på trafikken.</p>
+          <p>På Sengefabrikken ligger hovedvægten på udvikling. Her bygger jeg selv på platformen: sections, funktionalitet, hastighed og de ting der skal på plads, før en kampagne kan bære trafik. Til daglig betyder rollen ansvar for annoncebudget, konvertering, platform og rapportering, og jeg styrer på dækningsbidrag frem for på det ROAS, annonceplatformene selv melder tilbage.</p>
+          <p class="pt">Relevant for jer: jeg har taget springet fra ét marked til hele Europa før, og jeg ved hvad det koster at holde syv visninger i luften.</p>
+        </div>
+      </article>
+
+      <article class="thing">
+        <div class="col">
+          <div class="no">02</div>
+          <h3>Brandvaerk</h3>
+          <div class="per">Eget konsulentselskab · 2025 til nu</div>
+        </div>
+        <div class="body">
+          <p>Gennem mit eget selskab hjælper jeg brands med at vokse, og jeg tager hele vejen fra identitet til omsætning. Jeg udvikler på Shopify og Shopify Plus, hvor jeg bygger temaer, custom sections og B2B-opsætninger, og lige nu står jeg blandt andet for en migrering til Shopifys native B2B for en distributør. Jeg åbner nye markeder med Shopify Markets, hvor domæner, valuta, priser, betalingsmetoder og fragt skal sidde rigtigt, før der bliver skruet op for budgettet.</p>
+          <p>Jeg sidder selv i Meta og Google. Kontostruktur, målgrupper, kreativ testning og budgetallokering, styret efter ROAS og CAC og holdt op mod dækningsbidraget, så jeg kan se om skaleringen faktisk tjener penge. Fordelen ved også at være den, der udvikler shoppen, er at jeg ikke skal bestille en ændring på en produktside eller i et checkout-flow og vente to uger. Jeg laver den selv, og så kan der testes igen i morgen.</p>
+          <p>Dertil udarbejder jeg brandidentitet: positionering, visuel retning og tone of voice. Det er ikke et sideprojekt til annoncerne, det er forudsætningen for dem. Et brand uden en klar identitet kan man købe trafik til, men man kan ikke bygge genkøb på det.</p>
+          <p class="pt">Relevant for jer: I har allerede et stærkt brand. Jeg kan skalere det uden at gøre feedet billigt.</p>
+        </div>
+      </article>
+
+      <article class="thing">
+        <div class="col">
+          <div class="no">03</div>
+          <h3>Højholt Hudpleje</h3>
+          <div class="per">Medstifter · 2016 til nu</div>
+        </div>
+        <div class="body">
+          <p>Jeg driver Højholt sammen med min kæreste Simone, som vi stiftede i august 2016. Hun står for klinikken og fagligheden, jeg står for webshop, markedsføring og alt det digitale. Det er den forretning, hvor jeg har haft længst tid til at arbejde med det, der for mig er det vigtigste i e-commerce: at kunden kommer igen.</p>
+          <p>Hudpleje er en genkøbsforretning, så vi styrer efter LTV frem for det første salg. Vi arbejder målrettet med AOV gennem bundles, opsalg og en produktlinje jeg selv har været med til at føre fra koncept og sourcing til lancering, og har bygget hele kunderejsen op omkring genkøbsfrekvensen på de enkelte produkter. Det giver en langt højere kundeværdi end en tilsvarende konverteringsoptimering ville have gjort.</p>
+          <p>Samtidig er alt det gentagne automatiseret: flows, segmentering, kundekommunikation og rapportering kører af sig selv. Det er derfor forretningen kan drives ved siden af mit fuldtidsjob, og det er også sådan jeg helst arbejder. Automatiser driften, så tiden går til det, der faktisk flytter tal.</p>
+          <p class="pt">Relevant for jer: LTV og AOV er de to knapper der afgør, om vækst på nye markeder tjener penge.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cvband" id="cv">
+  <div class="wrap rise">
+    <div class="eyebrow">CV</div>
+    <h2 class="display">Hele overblikket på én side</h2>
+    <p>Over ti år med e-commerce og vækst, eget konsulentselskab, medejerskab og en cand.it. fra Aarhus Universitet.</p>
+    <div class="btnrow">
+      <a class="btn" href="cv.pdf" download>Hent mit CV <span class="arw">&darr;</span></a>
+      <a class="btn ghost" href="tel:+4528592898">Ring til mig</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap rise">
+    <div class="eyebrow">Kontakt</div>
+    <h2 class="display">Jeg er klar, når I er.</h2>
+    <div class="lines">
+      <a href="mailto:kryger1992@gmail.com">kryger1992@gmail.com</a>
+      <a href="tel:+4528592898">+45 28 59 28 98</a>
+      <a href="https://www.linkedin.com/in/alexander-kr%C3%BCger-52623765/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Alexander Krüger</span>
+    <span>Ansøgning · E-commerce Manager</span>
+  </div>
+</footer>
+
+<script>
+/* Login gate: dekorativ. Enhver indtastning giver adgang. */
+(function(){
+  var gate=document.getElementById('gate'),
+      form=document.getElementById('loginform'),
+      reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!gate||!form)return;
+  var vid=gate.querySelector('video'), timer=null;
+  function unlock(){
+    window.clearTimeout(timer);
+    document.body.classList.remove('locked');
+    if(reduce){ if(vid)vid.pause(); gate.style.display='none'; window.scrollTo(0,0); return; }
+    gate.classList.add('out');
+    timer=window.setTimeout(function(){
+      if(vid)vid.pause();
+      gate.style.display='none';
+      window.scrollTo(0,0);
+    },820);
+  }
+  function lock(){
+    window.clearTimeout(timer);
+    gate.style.display='flex';
+    void gate.offsetWidth;
+    gate.classList.remove('out');
+    document.body.classList.add('locked');
+    if(vid){ try{ vid.currentTime=0; vid.play(); }catch(e){} }
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();unlock();
+    window.setTimeout(function(){ if(window.riseSweep)window.riseSweep(); },40);
+  });
+  var home=document.getElementById('navhome');
+  if(home)home.addEventListener('click',function(e){e.preventDefault();lock();});
+})();
+
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.rise'));
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  function sweep(){
+    var vh=window.innerHeight||800;
+    els.forEach(function(e){
+      if(e.classList.contains('in'))return;
+      var r=e.getBoundingClientRect();
+      if(r.top<vh*0.94&&r.bottom>0)e.classList.add('in');
+    });
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:0,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  window.addEventListener('load',sweep);
+  window.addEventListener('scroll',sweep,{passive:true});
+  window.riseSweep=sweep;
+  sweep();
+})();
+</script>
+</body>
+</html>
